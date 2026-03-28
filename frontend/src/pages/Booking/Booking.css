@@ -1,0 +1,36 @@
+/* src/styles/Booking.css */
+.booking-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.booking-form {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--text-main);
+  font-size: 0.9rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,290 @@
+/* Research Central Lab Page Styles */
+
+/* Hero Section */
+.research-hero {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+  padding: 100px 20px 80px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.research-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 80%, rgba(255,255,255,0.05) 0%, transparent 40%);
+  z-index: 1;
+}
+
+.research-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-badge-research {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  padding: 6px 16px;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.research-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: var(--secondary);
+}
+
+.research-hero-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Layout Utilities */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.max-w-3xl { max-width: 800px; }
+.max-w-2xl { max-width: 600px; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+.mb-5 { margin-bottom: 3rem; }
+.mt-4 { margin-top: 1.5rem; }
+.text-center { text-align: center; }
+.w-100 { width: 100%; }
+.d-inline { display: inline; }
+.me-2 { margin-right: 0.5rem; }
+.text-sm { font-size: 0.875rem; }
+
+/* Support Grid */
+.support-section {
+  padding: 80px 0;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.support-card {
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.support-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.support-icon {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(11, 48, 81, 0.1);
+  color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+/* Biorepository */
+.biorepository-section {
+  padding: 80px 0;
+}
+
+.biorepository-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.biorepository-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: linear-gradient(135deg, rgba(211, 32, 41, 0.1) 0%, rgba(11, 48, 81, 0.05) 100%);
+  padding: 40px;
+  border: 1px solid rgba(211, 32, 41, 0.2);
+}
+
+.visual-stat {
+  background: white;
+  padding: 30px;
+  border-radius: var(--radius-md);
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.visual-stat h3 {
+  color: var(--primary);
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.visual-stat p {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Academic Collaboration */
+.academic-section {
+  padding: 80px 0;
+}
+
+.academic-pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pillar {
+  padding: 30px;
+  border-top: 4px solid var(--secondary);
+  text-align: left;
+}
+
+/* Quote & Portal Grid */
+.quote-portal-section {
+  padding: 80px 0;
+}
+
+.quote-portal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+}
+
+.quote-card, .portal-card {
+  padding: 40px;
+}
+
+.quote-card h2, .portal-card h2 {
+  margin-bottom: 15px;
+  color: var(--primary);
+}
+
+.quote-card p, .portal-card p {
+  margin-bottom: 25px;
+  color: var(--text-muted);
+}
+
+.quote-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.quote-form input, .quote-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.quote-form textarea {
+  resize: vertical;
+}
+
+.quote-form input:focus, .quote-form textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(11, 48, 81, 0.1);
+}
+
+.portal-login-box {
+  background: rgba(255,255,255,0.7);
+  padding: 30px;
+  border-radius: var(--radius-md);
+  border: 1px dashed rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Newsletter Section */
+.research-newsletter-section {
+  padding: 80px 0;
+}
+
+.newsletter-wrapper {
+  padding: 50px 30px;
+  background: linear-gradient(135deg, white 0%, #f8fcfd 100%);
+  border: 1px solid rgba(11, 48, 81, 0.1);
+}
+
+.newsletter-form-inline {
+  display: flex;
+  max-width: 500px;
+  gap: 10px;
+}
+
+.newsletter-form-inline input {
+  flex: 1;
+  padding: 12px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 30px;
+  outline: none;
+}
+
+.newsletter-form-inline input:focus {
+  border-color: var(--secondary);
+}
+
+.newsletter-form-inline .btn {
+  border-radius: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .research-hero-title {
+    font-size: 2.2rem;
+  }
+  .biorepository-content {
+    grid-template-columns: 1fr;
+  }
+  .quote-portal-grid {
+    grid-template-columns: 1fr;
+  }
+  .newsletter-form-inline {
+    flex-direction: column;
+  }
+  .newsletter-form-inline .btn {
+    width: 100%;
+  }
+}

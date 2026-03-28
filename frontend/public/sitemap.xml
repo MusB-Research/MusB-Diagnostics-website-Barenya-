@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Top Level -->
+  <url><loc>https://www.musbresearch.com/</loc></url>
+  <url><loc>https://www.musbresearch.com/about</loc></url>
+  <url><loc>https://www.musbresearch.com/contact</loc></url>
+  <url><loc>https://www.musbresearch.com/locations</loc></url>
+  <url><loc>https://www.musbresearch.com/book</loc></url>
+  <url><loc>https://www.musbresearch.com/offers</loc></url>
+  <url><loc>https://www.musbresearch.com/test-catalog</loc></url>
+  <url><loc>https://www.musbresearch.com/panels</loc></url>
+  <url><loc>https://www.musbresearch.com/pricing</loc></url>
+  <url><loc>https://www.musbresearch.com/blog</loc></url>
+  <url><loc>https://www.musbresearch.com/login</loc></url>
+
+  <!-- 1. Self-pay -->
+  <url><loc>https://www.musbresearch.com/self-pay-lab-tests</loc></url>
+  <url><loc>https://www.musbresearch.com/self-pay-lab-tests/test-catalog</loc></url>
+  <url><loc>https://www.musbresearch.com/self-pay-lab-tests/annual-health-check</loc></url>
+  <url><loc>https://www.musbresearch.com/self-pay-lab-tests/womens-health</loc></url>
+  <url><loc>https://www.musbresearch.com/self-pay-lab-tests/metabolic-health</loc></url>
+  <url><loc>https://www.musbresearch.com/self-pay-lab-tests/thyroid</loc></url>
+  <url><loc>https://www.musbresearch.com/self-pay-lab-tests/nutrition-vitamin</loc></url>
+  <url><loc>https://www.musbresearch.com/self-pay-lab-tests/std-testing</loc></url>
+
+  <!-- 2. Employers / HR -->
+  <url><loc>https://www.musbresearch.com/employer-health-program</loc></url>
+  <url><loc>https://www.musbresearch.com/employer-health-program/plans</loc></url>
+  <url><loc>https://www.musbresearch.com/employer-health-program/onsite-testing</loc></url>
+  <url><loc>https://www.musbresearch.com/employer-health-program/faq</loc></url>
+  <url><loc>https://www.musbresearch.com/employer-health-program/signup</loc></url>
+
+  <!-- 3. Physicians -->
+  <url><loc>https://www.musbresearch.com/physicians</loc></url>
+  <url><loc>https://www.musbresearch.com/physicians/order-tests</loc></url>
+  <url><loc>https://www.musbresearch.com/physicians/lis-integration</loc></url>
+  <url><loc>https://www.musbresearch.com/physicians/portal</loc></url>
+
+  <!-- 4. Assisted living -->
+  <url><loc>https://www.musbresearch.com/assisted-living-testing</loc></url>
+  <url><loc>https://www.musbresearch.com/assisted-living-testing/recurring-rounds</loc></url>
+  <url><loc>https://www.musbresearch.com/assisted-living-testing/mobile-collections</loc></url>
+  <url><loc>https://www.musbresearch.com/assisted-living-testing/portal</loc></url>
+
+  <!-- 5. Mobile phlebotomy -->
+  <url><loc>https://www.musbresearch.com/mobile-phlebotomy</loc></url>
+  <url><loc>https://www.musbresearch.com/mobile-phlebotomy/service-areas</loc></url>
+  <url><loc>https://www.musbresearch.com/mobile-phlebotomy/book-home-draw</loc></url>
+  <url><loc>https://www.musbresearch.com/mobile-phlebotomy/pricing</loc></url>
+
+  <!-- 6. Non-profits -->
+  <url><loc>https://www.musbresearch.com/community-programs</loc></url>
+  <url><loc>https://www.musbresearch.com/community-programs/nonprofit-partnerships</loc></url>
+  <url><loc>https://www.musbresearch.com/community-programs/screening-events</loc></url>
+  <url><loc>https://www.musbresearch.com/community-programs/apply</loc></url>
+
+  <!-- 7. Early diagnostics validation -->
+  <url><loc>https://www.musbresearch.com/early-diagnostics</loc></url>
+  <url><loc>https://www.musbresearch.com/early-diagnostics/biomarker-validation</loc></url>
+  <url><loc>https://www.musbresearch.com/early-diagnostics/submit-technology</loc></url>
+  <url><loc>https://www.musbresearch.com/early-diagnostics/project-tracker</loc></url>
+
+  <!-- 8. Research central lab -->
+  <url><loc>https://www.musbresearch.com/research-central-lab</loc></url>
+  <url><loc>https://www.musbresearch.com/research-central-lab/services</loc></url>
+  <url><loc>https://www.musbresearch.com/research-central-lab/biorepository</loc></url>
+  <url><loc>https://www.musbresearch.com/research-central-lab/sample-processing</loc></url>
+  <url><loc>https://www.musbresearch.com/research-central-lab/request-quote</loc></url>
+  <url><loc>https://www.musbresearch.com/research-central-lab/portal</loc></url>
+
+  <!-- Portals -->
+  <url><loc>https://www.musbresearch.com/portal/customer</loc></url>
+  <url><loc>https://www.musbresearch.com/portal/employer</loc></url>
+  <url><loc>https://www.musbresearch.com/portal/physician</loc></url>
+  <url><loc>https://www.musbresearch.com/portal/facility</loc></url>
+  <url><loc>https://www.musbresearch.com/portal/research</loc></url>
+  <url><loc>https://www.musbresearch.com/portal/biomarker</loc></url>
+  <url><loc>https://www.musbresearch.com/portal/affiliate</loc></url>
+  <url><loc>https://www.musbresearch.com/portal/staff</loc></url>
+</urlset>

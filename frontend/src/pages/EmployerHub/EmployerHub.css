@@ -1,0 +1,235 @@
+/* src/styles/EmployerHub.css */
+
+.employer-page {
+  font-family: 'Inter', sans-serif;
+}
+
+.employer-hero {
+  background: linear-gradient(135deg, #0b3051 0%, #1e40af 100%);
+  color: white;
+  padding: 6rem 2rem 5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.employer-hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at top right, rgba(255,255,255,0.1), transparent 40%);
+  pointer-events: none;
+}
+
+.employer-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-badge-corporate {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.employer-hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  font-family: 'Outfit', sans-serif;
+  color: var(--secondary);
+}
+
+.employer-hero-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.text-center { text-align: center; }
+.mb-5 { margin-bottom: 3rem; }
+
+/* Benefits Section */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.benefit-card {
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: transform 0.3s;
+  border-top: 4px solid var(--primary);
+}
+
+.benefit-card:hover { transform: translateY(-5px); }
+
+.benefit-icon {
+  width: 64px; height: 64px;
+  background: rgba(11, 48, 81, 0.05);
+  color: var(--primary);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.benefit-card h3 { font-size: 1.25rem; margin-bottom: 1rem; }
+.benefit-card p { color: var(--text-muted); font-size: 0.95rem; }
+
+/* Operations Logistics */
+.ops-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
+  text-align: left;
+}
+
+.ops-card {
+  padding: 3rem;
+  border-radius: 24px;
+  border: 1px solid var(--border-color);
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.ops-card::after {
+  content: ''; position: absolute; top: 0; right: 0; width: 150px; height: 150px;
+  background: radial-gradient(circle, rgba(211,32,41,0.05) 0%, transparent 70%);
+}
+
+.ops-card-icon {
+  color: var(--secondary); margin-bottom: 1.5rem;
+}
+
+.ops-card h3 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+.ops-highlight { color: var(--primary); font-weight: 700; font-size: 1.1rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px; }
+.ops-card p:last-child { font-size: 1.05rem; line-height: 1.7; color: var(--text-main); }
+
+@media (max-width: 768px) {
+  .ops-grid { grid-template-columns: 1fr; }
+}
+
+/* Plan Cards */
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.plan-card {
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+
+.plan-featured {
+  background: var(--primary);
+  color: white;
+  border: none;
+  transform: scale(1.02);
+  z-index: 2;
+}
+.plan-featured:hover { transform: scale(1.02) translateY(-8px); }
+.plan-featured p, .plan-featured .price-suffix { color: rgba(255,255,255,0.8); }
+
+.plan-tag {
+  position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+  background: var(--secondary); color: white;
+  padding: 0.25rem 1rem; border-radius: 999px;
+  font-size: 0.8rem; font-weight: 700; text-transform: uppercase;
+}
+
+.plan-icon-top { color: var(--secondary); margin-bottom: 1rem; }
+
+.plan-card h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+
+.plan-price { font-size: 2rem; font-weight: 800; margin-bottom: 1rem; display: flex; flex-direction: column; }
+.price-suffix { font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-top: -5px; }
+
+.plan-desc { font-size: 0.9rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1.5rem; }
+.plan-featured .plan-desc { border-color: rgba(255,255,255,0.2); }
+
+.plan-features { flex-grow: 1; margin-bottom: 2rem; }
+.plan-features li { display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.9rem; margin-bottom: 0.75rem; }
+.plan-features li svg { margin-top: 2px; flex-shrink: 0; color: var(--secondary); }
+.plan-featured .plan-features li svg { color: #fbbf24; }
+
+.plan-btn { width: 100%; text-align: center; }
+
+@media (max-width: 1024px) { .plan-featured { transform: scale(1); z-index: 1; } .plan-featured:hover { transform: translateY(-8px); } }
+
+/* Comparison Table */
+.table-responsive {
+  overflow-x: auto;
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  min-width: 800px;
+}
+
+.comparison-table th, .comparison-table td {
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.comparison-table th:first-child, .comparison-table td:first-child {
+  text-align: left;
+  font-weight: 600;
+  width: 35%;
+}
+
+.comparison-table th {
+  background: rgba(11, 48, 81, 0.05);
+  font-size: 1.1rem;
+  color: var(--primary);
+  font-family: 'Outfit', sans-serif;
+}
+
+.comparison-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+/* CTA */
+.employer-cta-banner {
+  background: radial-gradient(circle at center, var(--primary) 0%, #082540 100%);
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.cta-content { max-width: 700px; margin: 0 auto; }
+.cta-content h2 { font-size: 2.5rem; margin-bottom: 1rem; color: white; }
+.cta-content p { font-size: 1.1rem; opacity: 0.9; margin-bottom: 2.5rem; line-height: 1.6; }
+.CTA-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 1rem 3rem; font-size: 1.1rem; }
